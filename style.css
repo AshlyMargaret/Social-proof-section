@@ -194,10 +194,10 @@ h1{
         grid-template-columns: 1fr;
     }
 
-    /* .rate_box2,.rate_box3{
+     .rate_box2,.rate_box3{
         align-self: auto;
         
-    } */
+    } 
     .bottom_section{
         grid-template-columns: 1fr;
     }
@@ -220,4 +220,21 @@ h1{
         gap: 40px;
     }
 
+}
+
+@media(max-width:375px){
+ 
+    .rate_box1,.rate_box2,.rate_box3{
+        width: 310px;
+    }
+
+    .social_box1,.social_box2,.social_box3{
+        width: 310px;
+        margin: 0;
+    }
+
+    .bottom_section{
+        gap: 10px;
+        
+    }
 }
