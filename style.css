@@ -123,7 +123,7 @@ h1{
 .bottom_section{
      display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    width: 100%;
+    /* width: 100%; */
     /* display: flex;
     flex-direction: row; */
     gap: 20px;
@@ -185,8 +185,17 @@ h1{
 
 @media(max-width: 412px){
 
+
+
+        body{
+            background-image: url(/images/bg-pattern-top-mobile.svg),url(/images/bg-pattern-bottom-mobile.svg);
+            background-size: auto auto;
+            
+            height: auto;
+        }
+
     .container{
-        padding: 30px 30px;
+        padding: 30px 35px;
         gap:40px
     }
 
@@ -209,7 +218,7 @@ h1{
         gap: 10px;
     } 
     .left_container{
-        align-self: center;
+        /* align-self: center; */
         text-align: center;
     }
 
