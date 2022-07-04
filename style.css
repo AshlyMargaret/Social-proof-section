@@ -226,10 +226,31 @@ h1{
  
     .rate_box1,.rate_box2,.rate_box3{
         width: 310px;
+        padding: 10px 10px;
+        gap: 10px;
     }
 
     .social_box1,.social_box2,.social_box3{
         width: 310px;
+        margin: 0;
+    }
+
+    .bottom_section{
+        gap: 10px;
+        
+    }
+}
+
+@media(max-width:320px){
+ 
+    .rate_box1,.rate_box2,.rate_box3{
+        width: 270px;
+        padding: 10px 10px;
+        gap: 10px;
+    }
+
+    .social_box1,.social_box2,.social_box3{
+        width: 270px;
         margin: 0;
     }
 
