@@ -23,9 +23,9 @@ body{
     background-position:top left , bottom right;
     background-size:auto, 59rem;
 }
-.container{
+/* .container{
     padding: 60px 80px;
-}
+} */
 
 .container{
     display: grid;
@@ -98,6 +98,7 @@ h1{
 }
 
 .left_container{
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -111,6 +112,7 @@ h1{
 }
 
 .right_container{
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -121,6 +123,7 @@ h1{
 }
 
 .bottom_section{
+
 min-height: 20rem;
 height: auto;
 display: flex;
@@ -199,7 +202,7 @@ justify-content: space-between;
         }
 
     .container{
-        padding: 30px 35px;
+        /* padding: 30px 35px; */
         gap:40px
     }
 
@@ -211,9 +214,9 @@ justify-content: space-between;
         align-self: auto;
         
     } 
-    .bottom_section{
+    /* .bottom_section{
         grid-template-columns: 1fr;
-    }
+    } */
 
      .rate_box1,.rate_box2,.rate_box3{
         width: 340px;
@@ -239,6 +242,7 @@ justify-content: space-between;
         margin: 0;
     }
     .bottom_section{
+        justify-content: center;
         gap: 10px;
         
     }
@@ -248,10 +252,10 @@ justify-content: space-between;
 
 @media(max-width:375px){
 
-    .container{
+    /* .container{
         padding: 30px 30px;
     }
- 
+  */
     .rate_box1,.rate_box2,.rate_box3{
         width: 290px;
         padding: 10px 10px;
@@ -265,6 +269,7 @@ justify-content: space-between;
 
     .bottom_section{
         gap: 10px;
+        justify-content: center;
         
     }
 }
