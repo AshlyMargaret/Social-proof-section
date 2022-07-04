@@ -18,17 +18,22 @@
 
 body{
     font-family: League Spartan;
-    background-image: url(/images/bg-pattern-top-desktop.svg),url(/images/bg-pattern-bottom-desktop.svg);
+    /* background-image: url(/images/bg-pattern-top-desktop.svg),url(/images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat;
     background-position:top left , bottom right;
-    background-size:auto, 59rem;
+    background-size:auto, 59rem; */
     
 }
- .container{
-   width: 80%;
+ /* .container{
+   width: 90%;
    margin: 0 auto;
-} 
+}  */
 
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
 
 .top_section{
     min-height: 25rem;
@@ -39,15 +44,13 @@ body{
     flex-wrap: wrap;
 }
 
-
-
 h1{
     color: var(--VeryDarkMagenta);
 }
 
 .left_container{
-    width: 50%;
-    min-width: 25rem;
+     width: 40%; 
+    min-width: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,21 +58,20 @@ h1{
 }
 
 .left_container p{
-   color: var(--VeryDarkMagenta);
-   margin: 20px 30% 0 0;
+   color: var(--VeryDarkMagenta); 
     Font-size: 15px;
     line-height: 20px;
 }
 
 .right_container{
-    width: 50%;
-    min-width: 25rem;
+    width: 40%;
+     min-width: 20rem; 
     justify-content: center;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-flow: column wrap;
     gap: 20px;
 }
-
 
 .rate_box1{
     width: 400px;
@@ -84,7 +86,6 @@ h1{
 
 .rate_box2{
     width: 400px;
-   
     padding: 20px 20px;
     border-radius: 15px;
     background-color: var(--Light-Grayish-Magenta);
@@ -96,7 +97,6 @@ h1{
 
 .rate_box3{
     width: 400px;
-   
     padding: 20px 20px;
     border-radius: 15px;
     background-color: var(--Light-Grayish-Magenta);
@@ -123,8 +123,6 @@ h1{
     color: var(--Very-Dark-Magenta);
     font-weight: 700;
 }
-
-
 
 
 .right_container p{
@@ -168,15 +166,12 @@ margin-bottom: 1.25rem;
     flex-direction: row;
 }
 
-
-
 .desc{
     color: var(--White);
     line-height: 20px;
     Font-size: 15px;
     padding-top: 20px;
 }
-
 
 .status p{
    
@@ -200,21 +195,64 @@ margin-bottom: 1.25rem;
 
 /* Media Query */
 
+@media(max-width: 414px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .top_section{
+        gap:10px;
+    }
+
+     .left_container{
+        width: 100%;
+        text-align: center;
+        
+     }
+
+     .left_container p{
+        font-size: 12px;
+        padding: 0px 20px;
+     }
+    .right_container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .rate_box1,.rate_box2,.rate_box3{
+        align-items: center;
+        justify-content: center;
+        width: 350px; 
+        align-self: flex-start;
+        font-size: 12px;
+       
+        
+    } 
+
+    .bottom_section{
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
+
 @media(max-width: 412px){
 
 
 
-        body{
+        /* body{
             background-image: url(/images/bg-pattern-top-mobile.svg),url(/images/bg-pattern-bottom-mobile.svg);
             background-size: auto auto;
             
             height: auto;
-        }
+        } */
 
-    .container{
-        /* padding: 30px 35px; */
-        gap:40px
-    }
+    
 
     .top_section{
         grid-template-columns: 1fr;
@@ -222,40 +260,36 @@ margin-bottom: 1.25rem;
         margin-bottom: 3.125rem;
     }
 
-     .rate_box2,.rate_box3{
-        align-self: auto;
-        
-    } 
-    /* .bottom_section{
-        grid-template-columns: 1fr;
-    } */
+     
+    
 
      .rate_box1,.rate_box2,.rate_box3{
         width: 340px;
+        font-size: 12px;
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        justify-content: center;
+        width: 350px; 
+        align-self: flex-start;
+        
+       
+
+
     } 
     .left_container{
        
         text-align: center;
         
     }
-
-    .left_container h1{
-
-    width: 21.875rem;
-    min-width: 15.625rem;
-    /* font-size: var(--font-fifty); */
-    text-align: center;
-
+    .right_container{
+         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
+    
 
-    .left_container p{
-        width: 21.875rem;
-        min-width: 18.75rem;
-    }
-
+   
     .top_section{
         gap: 40px;
     }
@@ -275,18 +309,15 @@ margin-bottom: 1.25rem;
 
 @media(max-width:375px){
 
-    /* .container{
-        padding: 30px 30px;
-    }
-  */
+   
     .rate_box1,.rate_box2,.rate_box3{
-        width: 290px;
+        width: 320px;
         padding: 10px 10px;
         gap: 10px;
     }
 
     .social_box1,.social_box2,.social_box3{
-        width: 290px;
+        width: 20.5rem;
         margin: 0;
     }
 
@@ -300,13 +331,13 @@ margin-bottom: 1.25rem;
 @media(max-width:320px){
  
     .rate_box1,.rate_box2,.rate_box3{
-        width: 270px;
+        width: 290px;
         padding: 10px 10px;
         gap: 10px;
     }
 
     .social_box1,.social_box2,.social_box3{
-        width: 270px;
+        width: 20.5rem;  
         margin: 0;
     }
 
