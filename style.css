@@ -195,6 +195,47 @@ margin-bottom: 1.25rem;
 
 /* Media Query */
 
+
+@media(max-width:768px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .left_container{
+        width: 100%;
+        text-align: center;
+    }
+    .right_container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .top_section{
+        flex-direction: column;
+    }
+    .rate_box1,.rate_box2,.rate_box3{
+        align-self: flex-start;
+        align-items: center;
+        justify-content: center;
+        width: 680px; 
+        font-size: 15px;
+    }
+    .bottom_section{
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .social_box1,.social_box2,.social_box3{
+        width: 670px;
+        gap: 20px;
+    }
+
+}
+
 @media(max-width: 414px){
 
     .container{
@@ -239,6 +280,7 @@ margin-bottom: 1.25rem;
         gap: 20px;
     }
 
+    
 }
 
 @media(max-width: 412px){
