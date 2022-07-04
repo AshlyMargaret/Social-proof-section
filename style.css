@@ -32,7 +32,7 @@
 
 .rate_box1{
     width: 400px;
-    border: 1px solid black;
+   
     padding: 20px 20px;
     border-radius: 15px;
     background-color: var(--Light-Grayish-Magenta);
@@ -43,7 +43,7 @@
 
 .rate_box2{
     width: 400px;
-    border: 1px solid black;
+   
     padding: 20px 20px;
     border-radius: 15px;
     background-color: var(--Light-Grayish-Magenta);
@@ -55,7 +55,7 @@
 
 .rate_box3{
     width: 400px;
-    border: 1px solid black;
+   
     padding: 20px 20px;
     border-radius: 15px;
     background-color: var(--Light-Grayish-Magenta);
@@ -63,6 +63,24 @@
     flex-direction: row;
     align-self: flex-end;
     gap: 20px;
+}
+
+.rate_box1 p{
+   
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.rate_box2 p{
+   
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.rate_box3 p{
+   
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
 }
 
 h1{
@@ -77,6 +95,9 @@ h1{
 
 .left_container p{
    color: var(--VeryDarkMagenta);
+   margin: 20px 30% 0 0;
+    Font-size: 15px;
+    line-height: 20px;
 }
 
 .right_container{
@@ -90,17 +111,19 @@ h1{
 }
 
 .bottom_section{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
-   
-    display: flex;
-    flex-direction: row;
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    width: 100%;
+    /* display: flex;
+    flex-direction: row; */
     gap: 20px;
    
     
 }
 
 .social_box1,.social_box2,.social_box3{
+   width: 350px;
+   height: 200px;
    background-color: var(--VeryDarkMagenta);
    border-radius: 15px;
    padding: 20px 20px;
@@ -112,7 +135,37 @@ h1{
     flex-direction: row;
 }
 
+.social_box2{
+    margin-top: 20px;
+}
+
+.social_box3{
+    margin-top: 40px;
+}
+
+.desc{
+    color: var(--White);
+    line-height: 20px;
+    Font-size: 15px;
+    padding-top: 20px;
+}
 
 
+.status p{
+     /* display: block;  */
+    color: var(--SoftPink);
+   
+}
 
+.status h4{
+    color: var(--White);
+    line-height: 20px;
+    Font-size: 15px;
+}
 
+.profl img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
