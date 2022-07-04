@@ -22,36 +22,64 @@ body{
     background-repeat: no-repeat;
     background-position:top left , bottom right;
     background-size:auto, 59rem;
-    /* padding: 60px 60px; */
+    
 }
  .container{
    width: 80%;
    margin: 0 auto;
 } 
 
- /* .container{
-    display: grid;
-    grid-template-columns: 1fr;
-     gap: 90px; 
-}  */
 
 .top_section{
     min-height: 25rem;
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+
+
+h1{
+    color: var(--VeryDarkMagenta);
+}
+
+.left_container{
+    width: 50%;
+    min-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left_container p{
+   color: var(--VeryDarkMagenta);
+   margin: 20px 30% 0 0;
+    Font-size: 15px;
+    line-height: 20px;
+}
+
+.right_container{
+    width: 50%;
+    min-width: 25rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
 .rate_box1{
     width: 400px;
-   
     padding: 20px 20px;
     border-radius: 15px;
     background-color: var(--Light-Grayish-Magenta);
     display: flex;
     flex-direction: row;
     gap: 20px;
+    align-self: flex-start;
 }
 
 .rate_box2{
@@ -96,32 +124,8 @@ body{
     font-weight: 700;
 }
 
-h1{
-    color: var(--VeryDarkMagenta);
-}
 
-.left_container{
-    /* align-items: center; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
 
-.left_container p{
-   color: var(--VeryDarkMagenta);
-   margin: 20px 30% 0 0;
-    Font-size: 15px;
-    line-height: 20px;
-}
-
-.right_container{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
 
 .right_container p{
     color: var(--VeryDarkMagenta);
@@ -233,13 +237,23 @@ margin-bottom: 1.25rem;
         gap: 10px;
     } 
     .left_container{
-        /* align-self: center; */
+       
         text-align: center;
         
     }
 
+    .left_container h1{
+
+    width: 21.875rem;
+    min-width: 15.625rem;
+    /* font-size: var(--font-fifty); */
+    text-align: center;
+
+    }
+
     .left_container p{
-        margin: 0%;
+        width: 21.875rem;
+        min-width: 18.75rem;
     }
 
     .top_section{
