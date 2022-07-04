@@ -187,16 +187,17 @@ h1{
 
     .container{
         padding: 30px 30px;
+        gap:40px
     }
 
     .top_section{
         grid-template-columns: 1fr;
     }
 
-    .rate_box2,.rate_box3{
+    /* .rate_box2,.rate_box3{
         align-self: auto;
         
-    }
+    } */
     .bottom_section{
         grid-template-columns: 1fr;
     }
@@ -213,6 +214,10 @@ h1{
 
     .left_container p{
         margin: 0%;
+    }
+
+    .top_section{
+        gap: 40px;
     }
 
 }
