@@ -214,6 +214,8 @@ margin-bottom: 1.25rem;
 
     .top_section{
         grid-template-columns: 1fr;
+        margin-top: 5rem;
+        margin-bottom: 3.125rem;
     }
 
      .rate_box2,.rate_box3{
