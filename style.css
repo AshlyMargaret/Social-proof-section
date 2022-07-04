@@ -22,6 +22,7 @@ body{
     background-repeat: no-repeat;
     background-position:top left , bottom right;
     background-size:auto, 59rem;
+    padding: 60px 30px;
 }
 /* .container{
     padding: 60px 80px;
